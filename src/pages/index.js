@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import '@fontsource/prosto-one'
+import ContactDialog from '../../components/ContactDialog'
 import WorkSection from '../../components/WorkSection'
-import EmailIcon from '@mui/icons-material/Email';
-import { IconButton } from '@mui/material';
 
 export default function Home() {
   return (
@@ -18,9 +17,7 @@ export default function Home() {
         <div className={styles.center}>
           <h1 className='largeHeading'>CRAIG PUTZSTUCK</h1>
           <p className='smallHeading'>front end design & full stack development</p>
-          <IconButton aria-label='Email'>
-            <EmailIcon sx={{ color: 'var(--color4)' }} />
-          </IconButton>
+          <ContactDialog />
         </div>
         <WorkSection />
       </main>
