@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/audiowide": "^4.5.9",
@@ -19,6 +20,7 @@
     "@mui/lab": "^5.0.0-alpha.127",
     "@mui/material": "^5.12.1",
     "@mui/x-date-pickers-pro": "^6.2.1",
+    "email-js": "^2.0.2",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.12.4",

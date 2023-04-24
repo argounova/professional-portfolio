@@ -5,7 +5,7 @@ const projects = [
         image: '/images/fmb-ss.png',
         description: 'Music production marketing and services site.',
         subDescription: 'Gatsby, React, Framer-Motion, EmailJS, Styled Components',
-        siteLink: 'https://futuremovementbeatzmain.gatsbyjs.io/',
+        siteLink: 'https://futuremovementbeatz.com/',
         codeLink: 'https://github.com/argounova/future-movement-beatz',
     },
     {

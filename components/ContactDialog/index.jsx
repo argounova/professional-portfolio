@@ -7,8 +7,12 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import EmailIcon from '@mui/icons-material/Email';
-import {FormContainer, TextFieldElement} from 'react-hook-form-mui'
 import { IconButton } from '@mui/material';
+import { validateEmail } from '../../utils/helpers';
+import emailjs from '@emailjs/browser';
+import MessageSent from './messageSent';
+
+
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
@@ -18,6 +22,13 @@ export default function FormDialog() {
   const [errorMessage, setErrorMessage] = React.useState('');
   const form = React.useRef();
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const handleChange = (e) => {
     const { target } = e;
@@ -35,26 +46,18 @@ export default function FormDialog() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // if (!validateEmail(formEmail) || !formName) {
-    //   setErrorMessage('Valid email and/or name required!');
-    //   console.log(errorMessage);
-    //   return;
-    // }
+    if (!validateEmail(formEmail) || !formName) {
+      setErrorMessage('Valid email and/or name required!');
+      console.log(errorMessage);
+      return;
+    }
 
-    // emailjs.sendForm('service_peaz7nq', 'template_iuipk7c', form.current, 'ZElOBNy_cU2ZofiP0');
+    console.log();
+    emailjs.sendForm('service_peaz7nq', 'template_iuipk7c', form.current, 'ZElOBNy_cU2ZofiP0');
 
-    // alert(`Thanks for reaching out ${formName}! Please allow 1-2 business days for a response.`);
     setFormName('');
     setFormEmail('');
     setFormMessage('');
-  };
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
   };
 
   return (
@@ -69,6 +72,7 @@ export default function FormDialog() {
             Please allow 1-2 business days for a response.
           </DialogContentText>
           <form
+            id="contactForm"
             ref={form}
           >
             <TextField
@@ -79,7 +83,7 @@ export default function FormDialog() {
             onChange={handleChange}
             id="name"
             label="Name"
-            type="email"
+            type="text"
             fullWidth
             size="small"
             required
@@ -97,6 +101,7 @@ export default function FormDialog() {
             type="email"
             fullWidth
             size="small"
+            required
             />
             <TextField
             autoFocus
@@ -111,12 +116,14 @@ export default function FormDialog() {
             multiline
             rows={4}
             size="small"
+            required
             />
           </form>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleSubmit}>Send</Button>
+          
+          <Button onClick={handleSubmit}><MessageSent /></Button>
         </DialogActions>
       </Dialog>
      </div>
