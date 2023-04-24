@@ -30,7 +30,7 @@ export default function AlertDialog(props) {
       >
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Thanks for reaching out.  I'll be in touch soon.
+            Thanks for reaching out.  I&apos;ll be in touch soon.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
