@@ -10,19 +10,44 @@ import EmailIcon from '@mui/icons-material/Email';
 import {FormContainer, TextFieldElement} from 'react-hook-form-mui'
 import { IconButton } from '@mui/material';
 
-const formProps = {
-    name: '',
-    email: '',
-    message: '',
-} 
-
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
-  const [values, setValues] = React.useState(formProps);
+  const [formName, setFormName] = React.useState('');
+  const [formEmail, setFormEmail] = React.useState('');
+  const [formMessage, setFormMessage] = React.useState('');
+  const [errorMessage, setErrorMessage] = React.useState('');
+  const form = React.useRef();
 
-  const onSubmit = (formProps) => {
-    setValues(formProps)
-  }
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const formType = target.name;
+    const formValue = target.value;
+
+    if (formType === 'from_name') {
+      setFormName(formValue);
+    } else if (formType === 'reply_to') {
+      setFormEmail(formValue);
+    } else {
+      setFormMessage(formValue);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // if (!validateEmail(formEmail) || !formName) {
+    //   setErrorMessage('Valid email and/or name required!');
+    //   console.log(errorMessage);
+    //   return;
+    // }
+
+    // emailjs.sendForm('service_peaz7nq', 'template_iuipk7c', form.current, 'ZElOBNy_cU2ZofiP0');
+
+    // alert(`Thanks for reaching out ${formName}! Please allow 1-2 business days for a response.`);
+    setFormName('');
+    setFormEmail('');
+    setFormMessage('');
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -43,14 +68,15 @@ export default function FormDialog() {
           <DialogContentText>
             Please allow 1-2 business days for a response.
           </DialogContentText>
-          <FormContainer
-            defaultValues={{name: ''}}
-            onSuccess={data => console.log(data)}
+          <form
+            ref={form}
           >
-            <TextFieldElement
+            <TextField
             autoFocus
             margin="dense"
-            name="name"
+            value={formName}
+            name="from_name"
+            onChange={handleChange}
             id="name"
             label="Name"
             type="email"
@@ -63,6 +89,9 @@ export default function FormDialog() {
             // error
             // helperText="Invalid email"
             margin="dense"
+            value={formEmail}
+            name="reply_to"
+            onChange={handleChange}
             id="email"
             label="Email Address"
             type="email"
@@ -72,6 +101,9 @@ export default function FormDialog() {
             <TextField
             autoFocus
             margin="dense"
+            value={formMessage}
+            name="message"
+            onChange={handleChange}
             id="message"
             label="Message"
             type="email"
@@ -80,13 +112,13 @@ export default function FormDialog() {
             rows={4}
             size="small"
             />
-          </FormContainer>
+          </form>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Send</Button>
+          <Button onClick={handleSubmit}>Send</Button>
         </DialogActions>
       </Dialog>
-    </div>
+     </div>
   );
 }
