@@ -8,6 +8,7 @@ export default function WorkSection() {
             <div className={styles.grid}>
                 {projects.map(project => (
                     <WorkItem
+                        key={ project.id }
                         title={ project.title }
                         subheader={ project.subheader }
                         image={ project.image }

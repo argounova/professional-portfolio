@@ -1,5 +1,6 @@
 const projects = [
     {
+        id: '1',
         title: 'Future Movement Beatz',
         subheader: 'Design/Develop',
         image: '/images/fmb-ss.png',
@@ -9,6 +10,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/future-movement-beatz',
     },
     {
+        id: '2',
         title: 'Wix Photography Portfolio',
         subheader: 'Design/Develop',
         image: '/images/cpwix-ss.png',
@@ -18,6 +20,7 @@ const projects = [
         codeLink: 'https://craigliamphotography.wixsite.com/craigliam',
     },
     {
+        id: '3',
         title: 'Outta Touch',
         subheader: 'Design',
         image: '/images/outta-touch-ss.png',
@@ -27,6 +30,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/outta-touch',
     },
     {
+        id: '4',
         title: 'Magic:the Gathering',
         subheader: 'Design',
         image: '/images/mtg-ss.png',
@@ -36,6 +40,7 @@ const projects = [
         codeLink: 'https://github.com/HammontreeWebDev/MTGpp',
     },
     {
+        id: '5',
         title: 'CP Photography',
         subheader: 'Design/Develop',
         image: '/images/cpp-ss.png',
@@ -45,6 +50,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/cp-photography',
     },
     {
+        id: '6',
         title: 'Password Generator',
         subheader: 'Design/Develop',
         image: '/images/password-generator-ss.png',
@@ -54,6 +60,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/password-generator',
     },
     {
+        id: '7',
         title: 'Weather Dashboard',
         subheader: 'Design/Develop',
         image: '/images/weather-dashboard-ss.png',
@@ -63,6 +70,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/weather-dashboard',
     },
     {
+        id: '8',
         title: 'Day Planner',
         subheader: 'Design/Develop',
         image: '/images/day-planner-ss.png',
