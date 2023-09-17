@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
+import { motion } from 'framer-motion';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,12 +11,10 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
-// import FavoriteIcon from '@mui/icons-material/Favorite';
-// import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import StreamIcon from '@mui/icons-material/Stream';
-
+import Link from 'next/link';
 
 
 const ExpandMore = styled((props) => {
@@ -54,7 +53,22 @@ export default function WorkItem(props) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345, backgroundColor: 'var(--color15)', color: 'var(--color17)' }}>
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1, transition: { duration: 0.8 }  }}
+    whileHover={{ scale: 1.04, boxShadow: '0px 0px 8px var(--color4)' }}
+    style={{
+      maxWidth: 345,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}
+  >
+    <Card sx={{ width: '100%', minHeight: '450px', backgroundColor: 'var(--color15)', color: 'var(--color4)' }}>
       <CardHeader
        avatar={
           <StreamIcon />
@@ -66,6 +80,7 @@ export default function WorkItem(props) {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             onClick={handleOpenUserMenu}
+            style={{ color: 'var(--color6)' }}
           >
             <MoreVertIcon />
           </IconButton>
@@ -98,32 +113,40 @@ export default function WorkItem(props) {
             </Menu>
         </>
         }
-        title={title}
-        subheader={subheader}
+        title={subheader}
       />
-      <CardMedia
-        component="img"
-        height="194"
-        image={image}
-        alt="Paella dish"
-      />
+      <Typography
+        sx={{ color: 'var(--color6)', ml: 1}}
+        variant='h5'
+        gutterBottom
+      >
+      {title}
+
+      </Typography>
+      <Link
+        href={siteLink} 
+        target='_blank' 
+        rel='noreferrer'
+      >
+        <CardMedia
+          component="img"
+          height="194"
+          image={image}
+          alt="Paella dish"
+        />
+      </Link>
       <CardContent>
         <Typography variant="body2" color="var(--color17)">
          {description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        {/* <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton> */}
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
+          style={{ color: 'var(--color6)' }}
         >
           <ExpandMoreIcon />
         </ExpandMore>
@@ -136,5 +159,6 @@ export default function WorkItem(props) {
         </CardContent>
       </Collapse>
     </Card>
-  );
+    </motion.div>
+  )
 }

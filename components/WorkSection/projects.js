@@ -1,16 +1,36 @@
 const projects = [
     {
         id: '1',
+        title: 'The Serial Clayer',
+        subheader: 'Design/Develop',
+        image: '/images/the-serial-clayer-ss.png',
+        description: 'E-Commerce site with Shopify Headless CMS.',
+        subDescription: 'TypeScript, React, Framer-Motion, EmailJS, Styled Components',
+        siteLink: 'https://www.theserialclayer.com/',
+        codeLink: 'https://github.com/argounova/the-serial-clayer-commerce',
+    },
+    {
+        id: '2',
+        title: 'Turn17 Media',
+        subheader: 'Design/Develop',
+        image: '/images/turn17-screenshot-home.png',
+        description: 'Website design and development.',
+        subDescription: 'NextJS, Material UI, NextAuth, React, Framer-Motion, EmailJS, Styled Components',
+        siteLink: 'https://www.turn17media.com/',
+        codeLink: 'https://github.com/argounova/turn17-media',
+    },
+    {
+        id: '3',
         title: 'Future Movement Beatz',
         subheader: 'Design/Develop',
-        image: '/images/fmb-ss.png',
+        image: '/images/fmb-screenshot-home.png',
         description: 'Music production marketing and services site.',
         subDescription: 'Gatsby, React, Framer-Motion, EmailJS, Styled Components',
         siteLink: 'https://futuremovementbeatz.com/',
         codeLink: 'https://github.com/argounova/future-movement-beatz',
     },
     {
-        id: '2',
+        id: '4',
         title: 'Wix Photography Portfolio',
         subheader: 'Design/Develop',
         image: '/images/cpwix-ss.png',
@@ -20,7 +40,7 @@ const projects = [
         codeLink: 'https://craigliamphotography.wixsite.com/craigliam',
     },
     {
-        id: '3',
+        id: '5',
         title: 'Outta Touch',
         subheader: 'Design',
         image: '/images/outta-touch-ss.png',
@@ -30,7 +50,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/outta-touch',
     },
     {
-        id: '4',
+        id: '6',
         title: 'Magic:the Gathering',
         subheader: 'Design',
         image: '/images/mtg-ss.png',
@@ -40,7 +60,7 @@ const projects = [
         codeLink: 'https://github.com/HammontreeWebDev/MTGpp',
     },
     {
-        id: '5',
+        id: '7',
         title: 'CP Photography',
         subheader: 'Design/Develop',
         image: '/images/cpp-ss.png',
@@ -50,7 +70,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/cp-photography',
     },
     {
-        id: '6',
+        id: '8',
         title: 'Password Generator',
         subheader: 'Design/Develop',
         image: '/images/password-generator-ss.png',
@@ -60,7 +80,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/password-generator',
     },
     {
-        id: '7',
+        id: '9',
         title: 'Weather Dashboard',
         subheader: 'Design/Develop',
         image: '/images/weather-dashboard-ss.png',
@@ -70,7 +90,7 @@ const projects = [
         codeLink: 'https://github.com/argounova/weather-dashboard',
     },
     {
-        id: '8',
+        id: '10',
         title: 'Day Planner',
         subheader: 'Design/Develop',
         image: '/images/day-planner-ss.png',
