@@ -15,8 +15,8 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.center}>
-          <h1 className='largeHeading'>CRAIG PUTZSTUCK</h1>
-          <p className='smallHeading'>front end design & full stack development</p>
+          <h1>CRAIG PUTZSTUCK</h1>
+          <p>front end design & full stack development</p>
           <ContactDialog />
         </div>
         <WorkSection />

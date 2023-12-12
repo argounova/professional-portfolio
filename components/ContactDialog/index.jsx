@@ -63,7 +63,7 @@ export default function FormDialog() {
   return (
     <div>
     <IconButton aria-label='Email' onClick={handleClickOpen}>
-    <EmailIcon sx={{ color: 'var(--color4)' }} />
+    <EmailIcon sx={{ color: 'var(--color6)' }} />
     </IconButton>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Contact</DialogTitle>

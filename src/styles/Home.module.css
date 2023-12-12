@@ -48,6 +48,15 @@
   margin-bottom: 100px;
 }
 
+.gridflex {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  row-gap: 30px;
+  max-width: var(--max-width);
+  margin-bottom: 100px;
+}
+
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
@@ -91,7 +100,6 @@
 .center p {
   text-align: center;
   font-family: 'Prosto One', cursive;
-  color: var(--color4);
 }
 
 .logo {
@@ -121,8 +129,7 @@
     padding: 4rem;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
+  .gridflex {
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
@@ -194,8 +201,8 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+  .gridflex {
+    max-width: fit-content;
   }
 }
 

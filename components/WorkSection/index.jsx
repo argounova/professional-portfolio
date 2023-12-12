@@ -5,7 +5,7 @@ import projects from './projects'
 export default function WorkSection() {
     return (
         <>
-            <div className={styles.grid}>
+            <div className={styles.gridflex}>
                 {projects.map(project => (
                     <WorkItem
                         key={ project.id }
