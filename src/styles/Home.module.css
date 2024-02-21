@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .description {
@@ -35,7 +35,6 @@
 
 .code {
   font-weight: 700;
-  font-family: var(--font-mono);
 }
 
 .grid {
@@ -83,28 +82,61 @@
   max-width: 30ch;
 }
 
-.center {
+.landingPage__heading {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: center;
   margin: 100px 0px;
+  max-width: var(--max-width);
 }
 
-.center h1 {
-  text-align: center;
-  font-family: 'Prosto One';
-  color: var(--color6);
+.landingPage__heading h1 {
+  margin: 0px 10px;
+  letter-spacing: 10px;
+  font-family: 'Montserrat Variable', sans-serif;
+  font-weight: 100;
+  font-size: 3.5rem;
+  color: var(--blue2);
 }
 
-.center p {
-  text-align: center;
-  font-family: 'Prosto One', cursive;
+.landingPage__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(240deg, rgba(217,217,217,1) 0%, rgba(110,110,110,1) 50%);
+  z-index: -1;
+}
+
+.landingPage__footer_borderTop {
+  position: absolute;
+  bottom: 140px;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(13,13,13,0) 100%);
 }
 
 .logo {
   position: relative;
 }
+
+.radial_gradient {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(217,217,217,0.4) 0%, 
+    rgba(110,110,110,0.5) 10%, 
+    rgba(13,13,13,1) 30%
+  );
+  z-index: -1;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
