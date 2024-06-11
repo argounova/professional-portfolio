@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import '@fontsource-variable/montserrat'
-import WorkSection from '../../components/WorkSection'
-import LandingCategories from '../../components/LandingCategories'
+import LandingCategoriesAnim from '../../components/LandingCategoriesAnim'
 
 export default function Home() {
   return (
@@ -15,9 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.radial_gradient}></div>
-        
-        {/* <WorkSection /> */}
-        <LandingCategories />
+        <LandingCategoriesAnim />
         <div className={styles.landingPage__footer}></div>
         <div className={styles.landingPage__footer_borderTop}></div>
       </main>

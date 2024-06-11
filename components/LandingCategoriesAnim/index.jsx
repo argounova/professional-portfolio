@@ -11,17 +11,21 @@ import categories from './categories'
 import ContactDialog from '../../components/ContactDialog'
 
 
-
-export default function LandingCategories() {
+export default function LandingCategoriesAnim() {
 
   return (
     <>
+    <motion.div
+      initial={{ opacity: 1}}
+      whileInView={{ opacity: 0, transition: { duration: 1 } }}
+    >
       <div className={styles.landingPage__heading}>
         <h1>CRAIG K&Ouml;NIGWINTER</h1>
         <h1 style={{ color: 'var(--neon_green)' }}>|</h1>
         <h1 style={{ color: 'var(--blue1)' }}>PORTFOLIO</h1>
         <ContactDialog />
       </div>
+    </motion.div>
     <Box
       sx={{
         display: 'flex',
@@ -37,9 +41,9 @@ export default function LandingCategories() {
       {categories.map((category) => (
         <motion.div
           key={category.id}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 0.8 }  }}
-          whileHover={{ scale: 1.04 }}
+          initial={{ scale: 1 }}
+          whileInView={{ scale: 0.25, y: "-100%", transition: { duration: 0.8 }  }}
+          whileHover={{ scale: 0.27 }}
         >
           <Link
             href={category.link} 
@@ -85,11 +89,15 @@ export default function LandingCategories() {
         </motion.div>
       ))}
     </Box>
-    <LandingCategoriesContainer>
-      <div className='ellipse'></div>
-      <div className='ellipse'></div>
-      <div className='ellipse'></div>
-    </LandingCategoriesContainer>
+    <motion.div
+      whileInView={{ opacity: 0, transition: { duration: 1 }}}
+    >
+      <LandingCategoriesContainer>
+        <div className='ellipse'></div>
+        <div className='ellipse'></div>
+        <div className='ellipse'></div>
+      </LandingCategoriesContainer>
+    </motion.div>
     </>
   )
 }
