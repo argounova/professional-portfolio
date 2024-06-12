@@ -8,18 +8,18 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import categories from './categories'
-import ContactDialog from '../../components/ContactDialog'
+import ContactDialog from '../ContactDialog'
 
 
 
-export default function LandingCategories() {
+export default function LandingCategoriesPlay() {
 
   return (
     <>
       <div className={styles.landingPage__heading}>
-        <h1>CRAIG K&Ouml;NIGWINTER</h1>
-        <h1 style={{ color: 'var(--neon_green)' }}>|</h1>
-        <h1 style={{ color: 'var(--blue1)' }}>PORTFOLIO</h1>
+        <h1 style={{ color: '#d90bcb' }}>CRAIG K&Ouml;NIGWINTER</h1>
+        <h1 style={{ color: '#0339a6' }}>|</h1>
+        <h1 style={{ color: '#023373' }}>PORTFOLIO</h1>
         <ContactDialog />
       </div>
     <Box
@@ -55,8 +55,9 @@ export default function LandingCategories() {
             }}>
               <Typography
                 sx={{
-                  fontSize: '8rem',
+                  fontSize: '6rem',
                   fontFamily: 'Montserrat Variable',
+                  color: 'fff',
                   textTransform: 'uppercase'
                 }}
                 align='center'
@@ -72,6 +73,7 @@ export default function LandingCategories() {
                       sx={{
                         fontFamily: 'Montserrat Variable',
                         fontSize: '2rem',
+                        color: 'fff',
                         letterSpacing: '10px',
                       }}
                     >
