@@ -17,7 +17,7 @@ export default function LandingCategoriesAnim() {
     <>
     <motion.div
       initial={{ opacity: 1}}
-      whileInView={{ opacity: 0, transition: { duration: 1 } }}
+      animate={{ opacity: 0, transition: { duration: 1 } }}
     >
       <div className={styles.landingPage__heading}>
         <h1>CRAIG K&Ouml;NIGWINTER</h1>
@@ -42,7 +42,7 @@ export default function LandingCategoriesAnim() {
         <motion.div
           key={category.id}
           initial={{ scale: 1 }}
-          whileInView={{ scale: 0.25, y: "-100%", transition: { duration: 0.8 }  }}
+          animate={{ scale: 0.25, y: "-100%", transition: { duration: 0.8 }  }}
           whileHover={{ scale: 0.27 }}
         >
           <Link
@@ -90,7 +90,7 @@ export default function LandingCategoriesAnim() {
       ))}
     </Box>
     <motion.div
-      whileInView={{ opacity: 0, transition: { duration: 1 }}}
+      animate={{ opacity: 0, transition: { duration: 1 }}}
     >
       <LandingCategoriesContainer>
         <div className='ellipse'></div>

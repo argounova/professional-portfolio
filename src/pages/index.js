@@ -17,15 +17,24 @@ export default function Home() {
         <link rel="icon" href="/portfolio-icon.png" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.radial_gradient}></div>
-        
-        
-          <button onClick={() => setWorkPlay(!workPlay)} style={{ background: 'transparent', border: 'none', position: 'absolute', top: '5%', right: '5%' }}>
+        <button 
+          onClick={() => setWorkPlay(!workPlay)} 
+          style={{ background: 'transparent', border: 'none', position: 'absolute', top: '5%', right: '5%' }}
+        >
           <WorkPlayToggle />
-          </button>
-        {workPlay? (<LandingCategories />) : (<LandingCategoriesPlay />)}
-        <div className={styles.landingPage__footer}></div>
-        <div className={styles.landingPage__footer_borderTop}></div>
+        </button>
+        {workPlay? 
+          (
+            <LandingCategories />
+          ) : (
+            <LandingCategoriesPlay />
+          )}
+        {workPlay? 
+          (
+            <div className={styles.radial_gradient_work}></div>
+          ) : (
+            <div className={styles.radial_gradient_play}></div>
+          )}
       </main>
     </>
   )
