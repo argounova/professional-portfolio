@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Background_Work from '../../components/Background_Work'
 import NavigationPrimary from '../../components/NavigationPrimary'
+import Parallax from '../../components/Parallax'
 
 export default function Code_Home() {
   return (
@@ -13,6 +14,7 @@ export default function Code_Home() {
       </Head>
       <Background_Work />
       <NavigationPrimary linkTo="/design"/>
+      <Parallax />
     </>
   )
 }
