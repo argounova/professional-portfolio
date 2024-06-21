@@ -29,6 +29,18 @@ export const BackgroundWorkContainer = styled.div`
   left: auto;
 }
 
+.horizon_grid_background {
+  background: url(https://turn17media-main.s3.amazonaws.com/grid-background-v2.png);
+  background-size: cover;
+  background-position: center;
+  background-position-y: 0;
+  position: absolute;
+  z-index: -1;
+  height: 50vh;
+  width: 100vw;
+  bottom: 0;
+}
+
 .radial_gradient {
   position: absolute;
   z-index: -10;

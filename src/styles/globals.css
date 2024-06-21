@@ -85,9 +85,9 @@
   -webkit-font-smoothing: antialiased;
 }
 
-html {
+/* html {
   scroll-snap-type: y mandatory;  
-}
+} */
 
 /* html,
 body {

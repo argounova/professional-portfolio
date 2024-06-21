@@ -1,6 +1,5 @@
 import { BackgroundWorkContainer } from './style'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 
 export default function Background_Work() {
@@ -24,13 +23,8 @@ export default function Background_Work() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.2 }}
         transition={{ duration: 2 }}
-        className="horizon_grid"
       >
-        <Image
-          src={`/images/grid-background-v2.png`}
-          alt="code background"
-          fill
-        />
+        <div className='horizon_grid_background'></div>
       </motion.div>
     </BackgroundWorkContainer>
   )

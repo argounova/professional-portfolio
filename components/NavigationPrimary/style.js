@@ -5,6 +5,7 @@ export const NavigationPrimaryContainer = styled.div`
 
 .nav-home {
   position: absolute;
+  z-index: 100;
   top: 5%;
   left: 3%;
   transform: scale(-1, 1);
@@ -16,6 +17,7 @@ export const NavigationPrimaryContainer = styled.div`
 
 .nav-next {
   position: absolute;
+  z-index: 100;
   top: 5%;
   right: 3%;
 }
