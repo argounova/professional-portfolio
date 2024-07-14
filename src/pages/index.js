@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Craig K&ouml;nigwinter | Portfolio</title>
+        <title>Craig Putzstuck | Portfolio</title>
         <meta name="description" content="craig k&ouml;nigwinter 2024 professional portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/portfolio-icon.png" />

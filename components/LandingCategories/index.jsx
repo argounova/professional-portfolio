@@ -17,7 +17,7 @@ export default function LandingCategories() {
   return (
     <>
       <div className={styles.landingPage__heading}>
-        <h1>CRAIG K&Ouml;NIGWINTER</h1>
+        <h1>CRAIG PUTZSTUCK</h1>
         <h1 style={{ color: 'var(--neon_green)' }}>|</h1>
         <h1 style={{ color: 'var(--blue1)' }}>PORTFOLIO</h1>
         <ContactDialog />

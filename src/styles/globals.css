@@ -10,7 +10,7 @@
   --color6: #adffff;
   --color7: #034C8C;
   --fontgray: #c0c0c0;
-  --black: #000;
+  --black: #000000;
 
   /* 2024 WORK color variables */
   --blue1: #3d58f2;
@@ -21,6 +21,10 @@
   --charcoal1: #404040;
   --charcoal2: #6e6e6e;
   --charcoal3: #d9d9d9;
+  --purple1: #6d1b7b;
+  --purple2: #9c27b0;
+  --purple3: #af52bf;
+  --white: #fff;
 
   /* 2024 PLAY color variables */
   --play1: #d90bcb;
@@ -89,7 +93,7 @@
   scroll-snap-type: y mandatory;  
 } */
 
-/* html,
+html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -99,7 +103,7 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
-} */
+}
 
 body {
   /* color: rgb(var(--foreground-rgb)); */

@@ -17,7 +17,7 @@ export default function LandingCategoriesPlay() {
   return (
     <>
       <div className={styles.landingPage__heading}>
-        <h1 style={{ color: '#d90bcb' }}>CRAIG K&Ouml;NIGWINTER</h1>
+        <h1 style={{ color: '#d90bcb' }}>CRAIG PUTZSTUCK</h1>
         <h1 style={{ color: '#0339a6' }}>|</h1>
         <h1 style={{ color: '#023373' }}>PORTFOLIO</h1>
         <ContactDialog />

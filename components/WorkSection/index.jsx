@@ -5,7 +5,14 @@ import projects from './projects'
 export default function WorkSection() {
     return (
         <>
-            <div className={styles.gridflex}>
+            <div style={{
+                width: '100vw',
+                height: '100vh',
+                maxHeight: '100vh',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
                 {projects.map(project => (
                     <WorkItem
                         key={ project.id }
@@ -14,6 +21,9 @@ export default function WorkSection() {
                         image={ project.image }
                         description={ project.description }
                         subDescription={ project.subDescription }
+                        tech1={ project.tech1 }
+                        tech2={ project.tech2 }
+                        tech3={ project.tech3 }
                         siteLink={ project.siteLink }
                         codeLink={ project.codeLink }
                     />
