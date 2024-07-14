@@ -1,4 +1,4 @@
-import WorkItem from '../WorkItem'
+import WorkItem from '../ContentCard'
 import styles from '@/styles/Home.module.css'
 import projects from './projects'
 

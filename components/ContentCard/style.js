@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 
-export const WorkItemStyles = styled.div`
+export const ContentCardStyles = styled.section`
 .main__container {
   display: flex;
   justify_content: center;

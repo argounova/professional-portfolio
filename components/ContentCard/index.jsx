@@ -1,29 +1,60 @@
-import * as React from 'react';
-import { WorkItemStyles } from './style';
-import { Button, Icon } from '@mui/material';
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Typography from '@mui/material/Typography';
+import { ContentCardStyles } from './style';
+import {
+  createContext,
+  useContext,
+  useState
+} from 'react';
+import {
+  Box,
+  Button,
+  Icon,
+  IconButton,
+} from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CloseIcon from '@mui/icons-material/Close';
 import Link from 'next/link';
 import Image from 'next/image';
+import portfolioProjects from '../../constants/projects';
 
 
-export default function WorkItem(props) {
+const ContentCardContext = createContext();
+
+export default function ContentCard(props) {
+  const [ContentCardOpen, setContentCardOpen] = useState(false)
+
+  return (
+    <ContentCardContext.Provider value={{ ContentCardOpen, setContentCardOpen }}>
+      <ContentCardSelector {...props} />
+      <ContentCardComponent {...props} />
+    </ContentCardContext.Provider>
+  )
+}
+
+function ContentCardSelector(props) {
+  let { ContentCardOpen, setContentCardOpen } = useContext(ContentCardContext)
+
+  return (
+    <ContentCardStyles>
+      <Button onClick={() => setContentCardOpen(!ContentCardOpen)}>
+        Open Content Card
+      </Button>
+    </ContentCardStyles>
+  )
+
+}
+
+function ContentCardComponent(props) {
+  let { ContentCardOpen, setContentCardOpen } = useContext(ContentCardContext)
 
   let title = props.title
   let subheader = props.subheader
   let image = props.image
   let description = props.description
-  let subDescription = props.subDescription
   let siteLink = props.siteLink
   let codeLink = props.codeLink
   let tech1 = props.tech1
   let tech2 = props.tech2
   let tech3 = props.tech3
-  let onClick = props.onClick
 
   const imageStyle = {
     borderTopLeftRadius: '10px',
@@ -31,9 +62,14 @@ export default function WorkItem(props) {
   }
 
   return (
-    <WorkItemStyles>
-      <div className='main__container'>
-        <div className='card__image'>
+    <ContentCardStyles>
+    {ContentCardOpen ?
+      (
+        <ContentCardSelector />
+      ) : ( 
+        <>
+      <Box className='main__container'>
+        <Box className='card__image'>
           <Image 
             src={image} 
             alt='outta touch screenshot'
@@ -41,8 +77,11 @@ export default function WorkItem(props) {
             height={440}
             style={imageStyle}
           />
-        </div>
+        </Box>
         <div className='content__container'>
+          <IconButton>
+            <CloseIcon onClick={() => setContentCardOpen(!ContentCardOpen)} />
+          </IconButton>
           <div>
             <h1>{title}</h1>
             <h2>{subheader}</h2>
@@ -56,7 +95,7 @@ export default function WorkItem(props) {
             <p>{description}</p>
           </div>
         </div>
-      </div>
+      </Box>
       <div className='view__buttons'>
         <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%' }} href={siteLink}>
             View Live Project
@@ -65,6 +104,9 @@ export default function WorkItem(props) {
             View Code on Github
         </Button>
       </div>
-    </WorkItemStyles>
+      </>
+  )
+}
+  </ContentCardStyles>
   )
 }
