@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Background_Work from '../../components/Background_Work'
-import NavigationPrimary from '../../components/NavigationPrimary'
-import CodeProjects from '../../components/CodeProjects'
+import Background_Work from '../../../components/Background_Work'
+import NavigationPrimary from '../../../components/NavigationPrimary'
+import CodeProjects from '../../../components/CodeProjects'
 
 
 export default function Code_Home() {
@@ -17,7 +17,7 @@ export default function Code_Home() {
       </Head>
       <Background_Work />
       <NavigationPrimary linkTo="/design"/>
-      <CodeProjects />
+      <h1>Code Projects</h1>
     </>
   )
 }

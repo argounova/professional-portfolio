@@ -8,24 +8,14 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import categories from './categories'
-import ContactDialog from '../../components/ContactDialog'
+import ContactDialog from '../ContactDialog'
+import { code_projects } from '../../constants/projects'
 
 
-export default function LandingCategoriesAnim() {
+export default function CodeProjects() {
 
   return (
     <>
-    <motion.div
-      initial={{ opacity: 1}}
-      animate={{ opacity: 0, transition: { duration: 1 } }}
-    >
-      <div className={styles.landingPage__heading}>
-        <h1>CRAIG K&Ouml;NIGWINTER</h1>
-        <h1 style={{ color: 'var(--neon_green)' }}>|</h1>
-        <h1 style={{ color: 'var(--blue1)' }}>PORTFOLIO</h1>
-        <ContactDialog />
-      </div>
-    </motion.div>
     <Box
       sx={{
         display: 'flex',
@@ -34,26 +24,16 @@ export default function LandingCategoriesAnim() {
         alignItems: 'center',
         flexWrap: 'wrap',
         gap: '200px',
-        marginTop: '20px',
-        marginBottom: '200px',
       }}
     >
-      {categories.map((category) => (
-        <motion.div
-          key={category.id}
-          initial={{ scale: 1 }}
-          animate={{ scale: 0.25, y: "-100%", transition: { duration: 0.8 }  }}
-          whileHover={{ scale: 0.27 }}
-        >
+      {code_projects.map((project) => (
           <Link
-            href={category.link} 
-            // target='_blank' 
-            // rel='noreferrer'
+            href={`/code/${project.title}`} 
           >
             <Card sx={{ 
               width: '390px', 
               height: '390px', 
-              backgroundColor: `${category.color}`, 
+              backgroundColor: `${project.color}`, 
               borderRadius: '50px', 
               boxShadow: '0px 0px 20px 0px rgba(0,0,0,0.2)',
             }}>
@@ -65,28 +45,27 @@ export default function LandingCategoriesAnim() {
                 }}
                 align='center'
               >
-                {category.title}
+                {project.title}
               </Typography>        
               <CardContent>
                 {
-                  category.subtitles.map((subtitle) => ( 
+                  project.technologies.map((technology) => ( 
                     <Typography
-                      key={subtitle}
+                      key={technology}
                       align='center'
                       sx={{
                         fontFamily: 'Montserrat Variable',
-                        fontSize: '2rem',
+                        fontSize: '1.5rem',
                         letterSpacing: '10px',
                       }}
                     >
-                      {subtitle}
+                      {technology}
                     </Typography>
                   ))
                 }
               </CardContent>
             </Card>
           </Link>
-        </motion.div>
       ))}
     </Box>
     <motion.div

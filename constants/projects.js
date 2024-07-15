@@ -1,4 +1,4 @@
-const portfolioProjects = [
+export const code_projects = [
   {
       id: '1',
       title: 'Outta Touch',
@@ -6,31 +6,51 @@ const portfolioProjects = [
       tech1: 'React',
       tech2: 'GraphQL',
       tech3: 'MongoDB',
+      technologies: ['React', 'GraphQL', 'MongoDB'],
       image: '/images/outta-touch-ss.png',
       description: 'Instant messenger application built on React, utilizing a MongoDB database and installs locally.',
       siteLink: 'https://outta-touch.herokuapp.com/',
       codeLink: 'https://github.com/argounova/outta-touch',
+      buttonName: 'Instant Messenger',
+      color: 'var(--charcoal3)'
   },
-  // {
-  //     id: '2',
-  //     title: 'Magic:the Gathering',
-  //     subheader: 'Design',
-  //     image: '/images/mtg-ss.png',
-  //     description: 'Create an account, login, and start building multiple decks from a daily-updated SDK.  Save, edit, and delete as many decks as you wish.',
-  //     subDescription: 'MySQL, Skryfall SDK, Auto-complete, Dynamic Elements',
-  //     siteLink: 'https://peaceful-escarpment-11973.herokuapp.com/',
-  //     codeLink: 'https://github.com/HammontreeWebDev/MTGpp',
-  // },
-  // {
-  //     id: '3',
-  //     title: 'Password Generator',
-  //     subheader: 'Design/Develop',
-  //     image: '/images/password-generator-ss.png',
-  //     description: 'Create random passwords with JavaScript functions, EmailJS for contact and a responsive design as highlighted features.',
-  //     subDescription: 'JavaScript, EmailJS, Bootstrap',
-  //     siteLink: 'https://argounova.github.io/password-generator/index.html',
-  //     codeLink: 'https://github.com/argounova/password-generator',
-  // },
+    {
+      id: '2',
+      title: 'Magic:the Gathering',
+      subheader: 'Design',
+      tech1: 'MySQL',
+      tech2: 'Skryfall SDK',
+      tech3: 'Auto-complete',
+      technologies: ['MySQL', 'Skryfall SDK', 'Auto-complete'],
+      image: '/images/mtg-ss.png',
+      description: 'Create an account, login, and start building multiple decks from a daily-updated SDK.  Save, edit, and delete as many decks as you wish.',
+      subDescription: 'MySQL, Skryfall SDK, Auto-complete, Dynamic Elements',
+      siteLink: 'https://peaceful-escarpment-11973.herokuapp.com/',
+      codeLink: 'https://github.com/HammontreeWebDev/MTGpp',
+      buttonName: 'Magic:the Gathering',
+      color: 'var(--charcoal3)'
+  },
+  {
+    id: '3',
+    title: 'Password Generator',
+    subheader: 'Design/Develop',
+    tech1: 'JavaScript',
+    tech2: 'EmailJS',
+    tech3: 'Bootstrap',
+    technologies: ['JavaScript', 'EmailJS', 'Bootstrap'],
+    image: '/images/password-generator-ss.png',
+    description: 'Create random passwords with JavaScript functions, EmailJS for contact and a responsive design as highlighted features.',
+    subDescription: 'JavaScript, EmailJS, Bootstrap',
+    siteLink: 'https://argounova.github.io/password-generator/index.html',
+    codeLink: 'https://github.com/argounova/password-generator',
+    buttonName: 'Password Generator',
+    color: 'var(--charcoal3)'
+  },
+]
+
+export const design_projects = [
+ 
+
   // {
   //     id: '4',
   //     title: 'Weather Dashboard',
@@ -81,7 +101,4 @@ const portfolioProjects = [
   //     siteLink: 'https://futuremovementbeatz.com/',
   //     codeLink: 'https://github.com/argounova/future-movement-beatz',
   // },
-  
 ]
-
-export default portfolioProjects

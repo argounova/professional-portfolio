@@ -2,6 +2,13 @@ import styled from "@emotion/styled"
 
 
 export const ContentCardStyles = styled.section`
+width: 100vw;
+height: 100vh;
+max-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
 .main__container {
   display: flex;
   justify_content: center;
