@@ -6,8 +6,11 @@ width: 100vw;
 height: 100vh;
 max-height: 100vh;
 display: flex;
+flex-direction: column;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+padding: 0% 5%;
 
 .main__container {
   display: flex;
