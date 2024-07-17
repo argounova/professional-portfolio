@@ -15,7 +15,7 @@ export const code_projects = [
       color: 'var(--charcoal3)'
   },
     {
-      id: '2',
+      id: 'magic-the-gathering',
       title: 'Magic:the Gathering',
       subheader: 'Design',
       tech1: 'MySQL',
@@ -31,7 +31,7 @@ export const code_projects = [
       color: 'var(--charcoal3)'
   },
   {
-    id: '3',
+    id: 'password-generator',
     title: 'Password Generator',
     subheader: 'Design/Develop',
     tech1: 'JavaScript',
@@ -46,21 +46,23 @@ export const code_projects = [
     buttonName: 'Password Generator',
     color: 'var(--charcoal3)'
   },
+  {
+    id: 'weather-dashboard',
+    title: 'Weather Dashboard',
+    subheader: 'Design/Develop',
+    image: '/images/weather-dashboard-ss.png',
+    description: '5-day forecast data from a 3rd-party API, storing recent search history client-side and responsive design.',
+    subDescription: '3rd-Party API, Client-side Storage, Responsive',
+    siteLink: 'https://argounova.github.io/weather-dashboard/',
+    codeLink: 'https://github.com/argounova/weather-dashboard',
+    color: 'var(--charcoal3)'
+  },
 ]
 
 export const design_projects = [
  
 
-  // {
-  //     id: '4',
-  //     title: 'Weather Dashboard',
-  //     subheader: 'Design/Develop',
-  //     image: '/images/weather-dashboard-ss.png',
-  //     description: '5-day forecast data from a 3rd-party API, storing recent search history client-side and responsive design.',
-  //     subDescription: '3rd-Party API, Client-side Storage, Responsive',
-  //     siteLink: 'https://argounova.github.io/weather-dashboard/',
-  //     codeLink: 'https://github.com/argounova/weather-dashboard',
-  // },
+
   // {
   //     id: '5',
   //     title: 'Day Planner',
