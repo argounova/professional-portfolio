@@ -1,6 +1,6 @@
 export const code_projects = [
   {
-      id: '1',
+      id: 'outta-touch',
       title: 'Outta Touch',
       subheader: 'Design, Develop, Deploy',
       tech1: 'React',

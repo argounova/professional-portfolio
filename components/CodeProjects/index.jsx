@@ -28,7 +28,7 @@ export default function CodeProjects() {
     >
       {code_projects.map((project) => (
           <Link
-            href={`/code/${project.title}`} 
+            href={`/code/${project.id}`} 
           >
             <Card sx={{ 
               width: '390px', 
