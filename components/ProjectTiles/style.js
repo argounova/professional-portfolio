@@ -6,16 +6,13 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 height: 100vh;
-width: 100vw;
 max-height: 100vh;
 max-width: 100vw;
 padding: 5%;
 
-img {
-  border-radius: 10px;
-
+.hover-shadow {
   &:hover {
-    opacity: 0.8;
+    box-shadow: 0 0 10px 5px rgba(156, 39, 176,0.5);
   }
 }
 `

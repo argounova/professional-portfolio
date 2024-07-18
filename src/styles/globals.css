@@ -13,16 +13,16 @@
   --black: #000000;
 
   /* 2024 WORK color variables */
-  --blue1: #3d58f2;
+  --blue1: rgb(61, 88, 242);
   --blue2: #5c73f2;
-  --neon_green: #c5f222;
-  --neon_yellow: #ebf222;
+  --neon_green: rgb(197, 242, 34);
+  --neon_yellow: rgb(235, 242, 34);
   --dark_charcoal: #0d0d0d;
   --charcoal1: #404040;
   --charcoal2: #6e6e6e;
   --charcoal3: #d9d9d9;
   --purple1: #6d1b7b;
-  --purple2: #9c27b0;
+  --purple2: rgb(156, 39, 176);
   --purple3: #af52bf;
   --white: #fff;
 
