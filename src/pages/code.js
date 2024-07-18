@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Background_Work from '../../components/Background_Work'
 import NavigationPrimary from '../../components/NavigationPrimary'
-import CodeProjects from '../../components/CodeProjects'
-
+import ProjectTiles from '../../components/ProjectTiles'
+import { codePageProjects } from '../../constants/pageProjects'
 
 export default function Code_Home() {
 
@@ -17,7 +17,7 @@ export default function Code_Home() {
       </Head>
       <Background_Work />
       <NavigationPrimary linkTo="/design"/>
-      <CodeProjects />
+      <ProjectTiles projectList={codePageProjects} />
     </>
   )
 }
