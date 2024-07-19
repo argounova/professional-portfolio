@@ -12,20 +12,27 @@ export default function ProjectTiles(projectList) {
   return (
     <ProjectTilesStyles>
       <ImageList
-        gap={12}
+        gap={100}
         sx={{
           gridTemplateColumns: {
             xs: 'repeat(auto-fill, minmax(300px, 1fr)) !important',
-            md: 'repeat(auto-fill, minmax(400px, 1fr)) !important',
-            lg: 'repeat(auto-fill, minmax(500px, 1fr)) !important',
-            xl: 'repeat(auto-fill, minmax(600px, 1fr)) !important',
+            md: 'repeat(auto-fill, minmax(350px, 1fr)) !important',
           },
-          padding: '10px'
+          padding: '10px',
+          width: {
+            xs: '100vw',
+            md: '70vw',
+          },
+          mt: {
+            xs: '10vh',
+            md: '8vh',
+            lg: '5vh',
+          }
         }}
       >
       {projects.map((project) => (
         <Link key={project.id} href={`/${project.page}/${project.id}`}>
-          <Card className='hover-shadow'>
+          <Card className='hover-outline'>
             <ImageListItem sx={{ height: '100% !important' }} >
               <ImageListItemBar
                 sx={{

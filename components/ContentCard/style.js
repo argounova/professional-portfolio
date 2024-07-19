@@ -17,7 +17,7 @@ padding: 0% 5%;
   justify_content: center;
   align_items: center;
   width: 100%;
-  height: 440px;
+  height: 70%;
   background-color: rgb(0,0,0,0.6);
   color: var(--play1);
   box-shadow: 0px 0px 8px var(--neon_green);

@@ -6,13 +6,19 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 height: 100vh;
+width: 100vw;
 max-height: 100vh;
 max-width: 100vw;
 padding: 5%;
 
-.hover-shadow {
+.hover-outline {
   &:hover {
-    box-shadow: 0 0 10px 5px rgba(156, 39, 176,0.5);
+    outline: 1px solid var(--neon_green);
+    opacity: 0.5;
   }
+
+  border-radius: 50px;
+  border-bottom-left-radius: 0;
+  background-color: #000;
 }
 `
