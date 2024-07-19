@@ -16,8 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/portfolio-icon.png" />
       </Head>
-      <main className={styles.main}>
-        <button 
+        {/* <button 
           onClick={() => setWorkPlay(!workPlay)} 
           style={{ background: 'transparent', border: 'none', position: 'absolute', top: '5%', right: '5%' }}
         >
@@ -34,8 +33,8 @@ export default function Home() {
             <div className={styles.radial_gradient_work}></div>
           ) : (
             <div className={styles.radial_gradient_play}></div>
-          )}
-      </main>
+          )} */}
+        <LandingCategories />
     </>
   )
 }

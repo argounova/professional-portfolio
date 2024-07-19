@@ -13,8 +13,8 @@ padding: 5%;
 
 .hover-outline {
   &:hover {
-    outline: 1px solid var(--neon_green);
-    opacity: 0.5;
+    outline: 1px solid var(--white);
+    opacity: 0.8;
   }
 
   border-radius: 50px;

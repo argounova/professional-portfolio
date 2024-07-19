@@ -1,19 +1,18 @@
 import styled from "@emotion/styled"
 
-export const LandingCategoriesContainer = styled.div`
+export const LandingCategoriesContainer = styled.section`
 display: flex;
-flex-direction: row;
-justify-content: space-around;
+flex-direction: column;
+justify-content: center;
 align-items: center;
-flex-wrap: wrap;
-gap: 200px;
+width: 100vw;
+max-width: 100vw;
+padding: 5%;
+gap: 50px;
 
-.ellipse {
-  height: 30px;
-  width: 390px;
-  shape-outside: ellipse(390px 30px);
-  background: radial-gradient(circle, rgba(13,13,13,0.9) 25%, rgba(13,13,13,0.6) 100%);
-  border-radius: 50%;
+.hover-outline {
+  &:hover {
+    outline: 2px solid var(--white);
+    opacity: 0.8;
 }
-
 `

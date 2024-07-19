@@ -1,10 +1,10 @@
-import Link from "next/link"
 import { ProjectTilesStyles } from "./style"
 import { 
   Card, 
   ImageList, 
   ImageListItem, 
   ImageListItemBar } from "@mui/material"
+  import Link from "next/link"
 
 
 export default function ProjectTiles(projectList) {
@@ -12,7 +12,7 @@ export default function ProjectTiles(projectList) {
   return (
     <ProjectTilesStyles>
       <ImageList
-        gap={100}
+        gap={50}
         sx={{
           gridTemplateColumns: {
             xs: 'repeat(auto-fill, minmax(300px, 1fr)) !important',
