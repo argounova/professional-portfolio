@@ -1,6 +1,5 @@
 import { ContentCardStyles } from './style'
 import { Box, Button } from '@mui/material'
-import Image from 'next/image'
 
 
 export default function ContentCardComponent(props) {
@@ -16,36 +15,31 @@ export default function ContentCardComponent(props) {
   let codeLink = props.codeLink
 
   const imageStyle = {
-    borderTopLeftRadius: '10px',
-    borderBottomLeftRadius: '10px',
+    borderRadius: '10px',
+    maxWidth: '100%',
+    maxHeight: '100%',
+    height: 'auto',
+    width: 'auto'
   }
 
   return (
     <ContentCardStyles>
       <Box className='main__container'>
-        <Box className='card__image'>
-          <Image 
-            src={image} 
-            alt='outta touch screenshot'
-            width={960}
-            height={440}
-            style={imageStyle}
-          />
-        </Box>
-        <div className='content__container'>
-          <div>
+        <img 
+          src={image} 
+          alt='outta touch screenshot'
+          style={imageStyle}
+        />
+        <Box className='content__container'>
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
-          </div>
-          <div className='tech__stack'>
-            <h1>{tech1}</h1>
-            <h1>{tech2}</h1>
-            <h1>{tech3}</h1>
-          </div>
-          <div>
+            <div>
+              <h1>{tech1}</h1>
+              <h1>{tech2}</h1>
+              <h1>{tech3}</h1>
+            </div>
             <p>{description}</p>
-          </div>
-        </div>
+        </Box>
       </Box>
       <Box className='view__buttons'>
         <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%' }} href={siteLink}>

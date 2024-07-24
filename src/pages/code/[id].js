@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { getAllProjectIds, getProjectData } from '../../../lib/projects'
 import Background_Work from '../../../components/Background_Work'
-import NavigationPrimary from '../../../components/NavigationPrimary'
+import SimpleNavigation from '../../../components/SimpleNavigation'
 import ContentCardComponent from '../../../components/ContentCard'
 
 
@@ -15,7 +15,7 @@ export default function Code_Project({ projectData }) {
         <link rel="icon" href="/portfolio-icon.png" />
       </Head>
       <Background_Work />
-      <NavigationPrimary linkTo="/design"/>
+      <SimpleNavigation />
       <ContentCardComponent
         title={projectData.title}
         subtitle={projectData.subtitle}

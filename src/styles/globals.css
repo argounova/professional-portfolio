@@ -86,12 +86,22 @@
   padding: 0;
   margin: 0;
   font-style: normal;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
-/* html {
-  scroll-snap-type: y mandatory;  
-} */
+h1 {
+  font-size: calc(32px + 2vw);
+}
+
+h2 {
+  font-size: calc(24px + 1vw);
+}
+
+p {
+  font-size: calc(16px + 1vw);
+  text-wrap: wrap;
+}
 
 html,
 body {
@@ -106,10 +116,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb)); */
   background: var(--dark_charcoal);
   font-family: 'Montserrat Variable', sans-serif;
-  font-weight: 100;
 }
 
 a {
