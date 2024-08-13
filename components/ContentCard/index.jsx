@@ -32,10 +32,10 @@ export default function ContentCardComponent(props) {
         <li><p>{description}</p></li>
       </ul>
       <div id='grid__buttons'>
-        <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={siteLink}>
+        <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={siteLink} target="_blank">
             Project
         </Button>
-        <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={codeLink}>
+        <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={codeLink} target="_blank">
             Github
         </Button>
       </div>

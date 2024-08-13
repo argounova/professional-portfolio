@@ -12,7 +12,6 @@ gap: 50px;
 
 .hover-outline {
   &:hover {
-    outline: 2px solid var(--white);
-    opacity: 0.8;
+    background-color: var(--white);
 }
 `

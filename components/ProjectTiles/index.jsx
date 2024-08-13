@@ -1,16 +1,43 @@
 import { ProjectTilesStyles } from "./style"
 import { 
+  Box,
   Card, 
   ImageList, 
   ImageListItem, 
-  ImageListItemBar } from "@mui/material"
+  ImageListItemBar,
+  Typography } from "@mui/material"
   import Link from "next/link"
+  import '@fontsource-variable/montserrat'
 
 
 export default function ProjectTiles(projectList) {
   let projects = projectList.projectList
   return (
     <ProjectTilesStyles>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '100vw',
+          gap: '20px',
+        }}
+      >
+        <Typography
+          sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--white)' }}
+          textAlign={'center'}
+        >CODE</Typography>
+        <Typography 
+          sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--neon_green)' }}
+          textAlign={'center'}
+        >|</Typography>
+        <Typography
+          sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--dark_charcoal)' }}
+          textAlign={'center'}
+        >PROJECTS</Typography>
+      </Box>
       <ImageList
         gap={50}
         sx={{
@@ -36,7 +63,7 @@ export default function ProjectTiles(projectList) {
             <ImageListItem sx={{ height: '100% !important' }} >
               <ImageListItemBar
                 sx={{
-                  background: 'linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%), rgba(0,0,0,0.3) 100%',
+                  background: 'linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%), rgba(0,0,0,0.3) 100%', textAlign: 'center'
                 }}
                 title={project.title}
               />

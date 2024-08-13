@@ -64,7 +64,8 @@ export default function LandingCategories() {
                 sx={{
                   fontSize: '8rem',
                   fontFamily: 'Montserrat Variable',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
+                  color: 'var(--dark_charcoal)'
                 }}
                 align='center'
               >
@@ -80,6 +81,7 @@ export default function LandingCategories() {
                         fontFamily: 'Montserrat Variable',
                         fontSize: '2rem',
                         letterSpacing: '10px',
+                        color: 'var(--dark_charcoal)'
                       }}
                     >
                       {subtitle}

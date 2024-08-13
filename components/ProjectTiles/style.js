@@ -9,7 +9,7 @@ height: 100vh;
 width: 100vw;
 max-height: 100vh;
 max-width: 100vw;
-padding: 5%;
+padding: 100px 5%;
 
 .hover-outline {
   &:hover {
@@ -18,7 +18,6 @@ padding: 5%;
   }
 
   border-radius: 50px;
-  border-bottom-left-radius: 0;
   background-color: #000;
 }
 `
