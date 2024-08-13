@@ -1,45 +1,64 @@
 import styled from "@emotion/styled"
 
 
-export const ContentCardStyles = styled.section`
+export const GridStyles = styled.section`
 width: 100vw;
 height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+padding: 100px 0px;
+background-color: rgb(0,0,0,0.6);
+display: grid;
+grid-template-columns: 32px 1fr 32px;
+grid-template-areas:
+  ". description ."
+  ". image ."
+  ". buttons .";
+  gap: 1rem;
 
-.main__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify_content: center;
-  align_items: center;
-  gap: 20px;
-  width: 90%;
-  max-height: 70%;
-  background-color: rgb(0,0,0,0.6);
-  color: var(--play1);
-  box-shadow: 0px 0px 8px var(--neon_green);
+
+
+#grid__image {
+  grid-area: image;
   border-radius: 10px;
-  margin-top: 40px;
-
-  
+  max-width: 100%;
+  margin: auto;
 }
 
-.content__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start; 
-  width: 50%;
+#grid__description {
+  grid-area: description;
+  min-width: 100%;
+  list-style-type: none;
 }
 
-.view__buttons {
-  width: 90%;
+#grid__description h2 {
+  color: var(--play1);
+}
+
+#grid__buttons {
+  grid-area: buttons;
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
+  align-items: flex-start;
+}
+  
+@media (min-width: 768px) {
+  #grid__image {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1920px) {
+  grid-template-columns: 32px 1fr 1fr 32px;
+  grid-template-areas:
+    ". description image ."
+    ". buttons buttons .";
+
+  #grid__image {
+    max-width: 50%;
+  }
+
+  #grid__description li {
+    margin: 20px 0px;
+  }
 }
 `
