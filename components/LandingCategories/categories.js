@@ -10,7 +10,7 @@ const categories = [
   },
   {
     id: 2,
-    title: 'UI/UX',
+    title: 'DSN',
     subtitles: [
       'Prototyping', 'Color Theory', 'Interaction',
     ],

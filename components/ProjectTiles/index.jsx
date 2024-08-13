@@ -10,34 +10,37 @@ import {
   import '@fontsource-variable/montserrat'
 
 
-export default function ProjectTiles(projectList) {
-  let projects = projectList.projectList
+export default function ProjectTiles({projectList, titles}) {
+  
   return (
     <ProjectTilesStyles>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100vw',
-          gap: '20px',
-        }}
-      >
-        <Typography
-          sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--white)' }}
-          textAlign={'center'}
-        >CODE</Typography>
-        <Typography 
-          sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--neon_green)' }}
-          textAlign={'center'}
-        >|</Typography>
-        <Typography
-          sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--dark_charcoal)' }}
-          textAlign={'center'}
-        >PROJECTS</Typography>
-      </Box>
+      {titles.map((each) => (
+        <Box
+          key={each.title1}
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100vw',
+            gap: '20px',
+          }}
+        >
+          <Typography
+            sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--white)' }}
+            textAlign={'center'}
+          >{each.title1}</Typography>
+          <Typography 
+            sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--neon_green)' }}
+            textAlign={'center'}
+          >|</Typography>
+          <Typography
+            sx={{ fontFamily: 'Montserrat Variable', fontSize: '3rem', letterSpacing: '10px', color: 'var(--dark_charcoal)' }}
+            textAlign={'center'}
+          >{each.title2}</Typography>
+        </Box>
+      ))}
       <ImageList
         gap={50}
         sx={{
@@ -57,7 +60,7 @@ export default function ProjectTiles(projectList) {
           }
         }}
       >
-      {projects.map((project) => (
+      {projectList.map((project) => (
         <Link key={project.id} href={`/${project.page}/${project.id}`}>
           <Card className='hover-outline'>
             <ImageListItem sx={{ height: '100% !important' }} >
