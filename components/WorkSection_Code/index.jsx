@@ -1,19 +1,12 @@
 import WorkItem from '../ContentCard/indexHold'
 import styles from '@/styles/Home.module.css'
-import projects from './projects'
+import code_projects from './projects'
 
-export default function WorkSection() {
+export default function WorkSection_Code() {
     return (
         <>
-            <div style={{
-                width: '100vw',
-                height: '100vh',
-                maxHeight: '100vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-            }}>
-                {projects.map(project => (
+            <div className={styles.gridflex}>
+                {code_projects.map(project => (
                     <WorkItem
                         key={ project.id }
                         title={ project.title }
@@ -21,9 +14,6 @@ export default function WorkSection() {
                         image={ project.image }
                         description={ project.description }
                         subDescription={ project.subDescription }
-                        tech1={ project.tech1 }
-                        tech2={ project.tech2 }
-                        tech3={ project.tech3 }
                         siteLink={ project.siteLink }
                         codeLink={ project.codeLink }
                     />
