@@ -13,6 +13,7 @@ export default function ContentCardComponent(props) {
   let description = props.description
   let siteLink = props.siteLink
   let codeLink = props.codeLink
+  let buttonsRender = props.buttonsRender
 
   return (
     <GridStyles>
@@ -31,14 +32,19 @@ export default function ContentCardComponent(props) {
         <li><h1>{tech3}</h1></li>
         <li><p>{description}</p></li>
       </ul>
-      <div id='grid__buttons'>
-        <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={siteLink} target="_blank">
-            Project
-        </Button>
-        <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={codeLink} target="_blank">
-            Github
-        </Button>
-      </div>
+
+      {buttonsRender? (
+        <div id='grid__buttons'>
+          <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={siteLink} target="_blank">
+              Project
+          </Button>
+          <Button variant='outlined' color='secondary' size='large' sx={{ width: '49%', textAlign: 'center' }} href={codeLink} target="_blank">
+              Github
+          </Button>
+        </div> 
+      ) : (null)
+      }
+      
     </GridStyles>
   )
 }

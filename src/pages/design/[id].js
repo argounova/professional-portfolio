@@ -5,11 +5,11 @@ import SimpleNavigation from '../../../components/SimpleNavigation'
 import ContentCardComponent from '../../../components/ContentCard'
 
 
-export default function Code_Project({ projectData }) {
+export default function Design_Project({ projectData }) {
   return (
     <>
       <Head>
-        <title>Craig Putzstuck | Code Projects</title>
+        <title>Craig Putzstuck | Design Projects</title>
         <meta name="description" content="craig putzstuck 2024 professional portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/portfolio-icon.png" />
@@ -26,7 +26,7 @@ export default function Code_Project({ projectData }) {
         description={projectData.description}
         siteLink={projectData.siteLink}
         codeLink={projectData.codeLink}
-        buttonsRender={true}
+        buttonsRender={false}
       />
     </>
   )

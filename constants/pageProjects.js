@@ -41,28 +41,16 @@ export const designPageTitle = [
 
 export const designPageProjects = [
   {
-    id: 'outta-touch',
-    title: 'INSTANT MESSENGER',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/outta-touch-ts.jpg',
+    id: 'flyers',
+    title: 'FLYERS',
+    page: 'design',
+    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/amwins-dei-flyers.png',
   },
   {
-    id: 'magic-the-gathering',
-    title: 'ACCOUNT CREATION',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/mtg-ts.jpg',
-  },
-  {
-    id: 'password-generator',
-    title: 'RANDOM PASSWORD GENERATOR',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/password-gen-ts.jpg',
-  },
-  {
-    id: 'weather-dashboard',
-    title: 'WEATHER API',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/weather-dashboard-ts.jpg',
+    id: 'business-cards',
+    title: 'BUSINESS CARDS',
+    page: 'design',
+    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/business-cards.png',
   },
 ]
 
@@ -74,28 +62,5 @@ export const threeDPageTitle = [
 ]
 
 export const threeDPageProjects = [
-  {
-    id: 'outta-touch',
-    title: 'INSTANT MESSENGER',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/outta-touch-ts.jpg',
-  },
-  {
-    id: 'magic-the-gathering',
-    title: 'ACCOUNT CREATION',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/mtg-ts.jpg',
-  },
-  {
-    id: 'password-generator',
-    title: 'RANDOM PASSWORD GENERATOR',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/password-gen-ts.jpg',
-  },
-  {
-    id: 'weather-dashboard',
-    title: 'WEATHER API',
-    page: 'code',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/weather-dashboard-ts.jpg',
-  },
+ 
 ]
