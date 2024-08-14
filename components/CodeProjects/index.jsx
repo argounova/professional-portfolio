@@ -10,6 +10,7 @@ export default function CodeProjects() {
     <CodeProjectsStyles>
       {code_projects.map((project) => (
         <Link
+          key={project.id}
           href={`/code/${project.id}`} 
         >
           <Card sx={{ 
