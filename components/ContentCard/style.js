@@ -33,6 +33,14 @@ grid-template-areas:
   color: var(--play1);
 }
 
+#grid__description h1 {
+  color: var(--white);
+}
+
+#grid__description p {
+  color: var(--white);
+}
+
 #grid__buttons {
   grid-area: buttons;
   min-width: 100%;

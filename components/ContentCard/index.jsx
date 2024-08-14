@@ -24,7 +24,7 @@ export default function ContentCardComponent(props) {
       />
       <ul id='grid__description'>
         <li>
-          <h2>{title}</h2>
+          <h2 style={{ fontStyle: 'italic' }} >{title}</h2>
           <h2>{subtitle}</h2>
         </li>
         <li><h1>{tech1}</h1></li>
