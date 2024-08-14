@@ -50,7 +50,9 @@ export default function LandingCategories() {
         }}
       >
         {categories.map((category) => (
-          <Link href={category.link}>
+          <Link 
+            key={category.title}
+            href={category.link}>
             <Card sx={{  
               backgroundColor: `${category.color}`, 
               borderRadius: '50px',
