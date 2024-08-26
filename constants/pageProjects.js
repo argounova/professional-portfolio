@@ -64,3 +64,19 @@ export const threeDPageTitle = [
 export const threeDPageProjects = [
  
 ]
+
+export const databasePageTitle = [
+  {
+    title1: 'Database',
+    title2: 'PROJECTS',
+  }
+]
+
+export const databasePageProjects = [
+ {
+  id: 'postgresql-video_store',
+  title: 'PostgreSQL Video Store',
+  page: 'database',
+  img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/johnson_video-ERD.jpg'
+ },
+]

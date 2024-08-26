@@ -3,19 +3,19 @@ const categories = [
     id: 1,
     title: '</>',
     subtitles: [
-      'React.js', 'MongoDB', 'Python'
+      'React.js', 'JavaScript', 'Python'
     ],
     color: 'var(--blue2)',
     link: '/code',
   },
   {
     id: 2,
-    title: 'DSN',
+    title: 'DB',
     subtitles: [
-      'Prototyping', 'Color Theory', 'Interaction',
+      'PostgreSQL', 'SAS / R', 'MongoDB',
     ],
     color: 'var(--neon_green)',
-    link: '/design',
+    link: '/database',
   },
   {
     id: 3,
