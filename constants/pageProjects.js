@@ -62,7 +62,18 @@ export const threeDPageTitle = [
 ]
 
 export const threeDPageProjects = [
- 
+  {
+    id: 'furniture',
+    title: 'Coffee Table',
+    page: '3d',
+    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/coffee-table-render.jpg',
+  },
+  {
+    id: '3d-animations',
+    title: '3D ANIMATIONS',
+    page: '3d',
+    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/3d-animations.jpg',
+  }
 ]
 
 export const databasePageTitle = [
