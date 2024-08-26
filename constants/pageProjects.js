@@ -69,10 +69,10 @@ export const threeDPageProjects = [
     img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/coffee-table-render.jpg',
   },
   {
-    id: '3d-animations',
-    title: '3D ANIMATIONS',
+    id: 'sim-rig',
+    title: 'Sim Racing Rig',
     page: '3d',
-    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/3d-animations.jpg',
+    img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/sim-rig.jpg',
   }
 ]
 
