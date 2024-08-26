@@ -79,4 +79,10 @@ export const databasePageProjects = [
   page: 'database',
   img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/johnson_video-ERD.jpg'
  },
+ {
+  id: 'mongodb-turn17media',
+  title: 'Non-Relational Database',
+  page: 'database',
+  img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/turn17media-compass.jpg'
+ },
 ]

@@ -7,13 +7,14 @@ import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
 import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import StorageIcon from '@mui/icons-material/Storage';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import Link from 'next/link';
 
 const actions = [
   { icon: <HomeIcon />, name: 'Home', link: '/' },
   { icon: <CodeIcon />, name: 'Code', link: '/code' },
-  { icon: <DesignServicesIcon />, name: 'Design', link: '/design'  },
+  { icon: <StorageIcon />, name: 'Database', link: '/database'  },
   { icon: <ViewInArIcon />, name: '3D', link: '/3d' },
 ];
 
