@@ -5,6 +5,7 @@ import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
 import HomeIcon from '@mui/icons-material/Home';
+import InsightsIcon from '@mui/icons-material/Insights';
 import CodeIcon from '@mui/icons-material/Code';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import StorageIcon from '@mui/icons-material/Storage';
@@ -14,7 +15,7 @@ import Link from 'next/link';
 const actions = [
   { icon: <HomeIcon />, name: 'Home', link: '/' },
   { icon: <CodeIcon />, name: 'Code', link: '/code' },
-  { icon: <StorageIcon />, name: 'Database', link: '/database'  },
+  { icon: <InsightsIcon />, name: 'Data Science', link: '/data-science'  },
   { icon: <ViewInArIcon />, name: '3D', link: '/3d' },
 ];
 

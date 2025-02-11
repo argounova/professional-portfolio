@@ -64,12 +64,12 @@ export default function ProjectTiles({projectList, titles}) {
         <Link key={project.id} href={`/${project.page}/${project.id}`}>
           <Card className='hover-outline'>
             <ImageListItem sx={{ height: '100% !important' }} >
-              <ImageListItemBar
+              {/* <ImageListItemBar
                 sx={{
                   background: 'linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%), rgba(0,0,0,0.3) 100%', textAlign: 'center'
                 }}
                 title={project.title}
-              />
+              /> */}
               <img
                 src={project.img}
                 alt={project.title}

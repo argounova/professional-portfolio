@@ -10,12 +10,12 @@ const categories = [
   },
   {
     id: 2,
-    title: 'DB',
+    title: 'DATA',
     subtitles: [
-      'PostgreSQL', 'SAS / R', 'MongoDB',
+      'AI / ML', 'R', 'Statistics',
     ],
     color: 'var(--neon_green)',
-    link: '/database',
+    link: '/data-science',
   },
   {
     id: 3,

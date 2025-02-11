@@ -13,11 +13,7 @@ padding: 100px 5%;
 
 .hover-outline {
   &:hover {
-    outline: 1px solid var(--white);
     opacity: 0.8;
-  }
-
-  border-radius: 50px;
-  background-color: #000;
+  }  
 }
 `

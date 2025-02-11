@@ -55,7 +55,6 @@ export default function LandingCategories() {
             href={category.link}>
             <Card sx={{  
               backgroundColor: `${category.color}`, 
-              borderRadius: '50px',
               width: '390px',
               height: '390px',
               margin: '20px', 
