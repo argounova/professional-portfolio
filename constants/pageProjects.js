@@ -84,18 +84,6 @@ export const datasciencePageTitle = [
 ]
 
 export const datasciencePageProjects = [
-//  {
-//   id: 'postgresql-video_store',
-//   title: 'PostgreSQL Video Store',
-//   page: 'data-science',
-//   img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/johnson_video-ERD.jpg'
-//  },
-//  {
-//   id: 'mongodb-turn17media',
-//   title: 'Non-Relational Database',
-//   page: 'data-science',
-//   img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/turn17media-compass.jpg'
-//  },
  {
   id: 'ames-housing',
   title: 'Multiple Linear Regression',
@@ -107,5 +95,17 @@ export const datasciencePageProjects = [
   title: 'Binomial Logistic Regression',
   page: 'data-science',
   img: 'https://cwp-professional-portfolio.s3.us-east-1.amazonaws.com/Project+Screenshots/Square/customer-churn-confusion-matrix.png'
+ },
+  {
+  id: 'postgresql-video_store',
+  title: 'PostgreSQL Video Store',
+  page: 'data-science',
+  img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/johnson_video-ERD.jpg'
+ },
+ {
+  id: 'mongodb-turn17media',
+  title: 'Non-Relational Database',
+  page: 'data-science',
+  img: 'https://cwp-professional-portfolio.s3.amazonaws.com/Project+Screenshots/Tilt+Shift+Square/turn17media-compass.jpg'
  },
 ]
