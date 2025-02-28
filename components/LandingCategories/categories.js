@@ -12,7 +12,7 @@ const categories = [
     id: 2,
     title: 'DATA',
     subtitles: [
-      'AI / ML', 'R', 'Statistics',
+      'R / SAS', 'Visualization', 'AI / ML',
     ],
     color: 'var(--neon_green)',
     link: '/data-science',

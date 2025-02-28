@@ -96,6 +96,12 @@ export const datasciencePageProjects = [
   page: 'data-science',
   img: 'https://cwp-professional-portfolio.s3.us-east-1.amazonaws.com/Project+Screenshots/Square/customer-churn-confusion-matrix.png'
  },
+ {
+  id: 'getc-dashboard',
+  title: 'Tableau Dashboard',
+  page: 'data-science',
+  img: 'https://cwp-professional-portfolio.s3.us-east-1.amazonaws.com/Project+Screenshots/Square/Screenshot+2025-02-28+at+09.52.37.png'
+ },
   {
   id: 'postgresql-video_store',
   title: 'PostgreSQL Video Store',
